@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timu | Coffee & Cakes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <a href="#home" class="logo"><i class="fas fa-coffee"></i> Timu</a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#order">Order</a>
+            <a href="#about-faq">About & FAQ</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="nav-actions">
+            <button id="theme-toggle" aria-label="Toggle Theme">
+                <i class="fas fa-moon"></i>
+            </button>
+            <div class="menu-btn" id="menu-btn"><i class="fas fa-bars"></i></div>
+        </div>
+    </header>
+
+    <section id="home" class="home">
+        <div class="home-content">
+            <h1>Brewed to Perfection, <br>Baked with Love</h1>
+            <p>Welcome to Timu, where every cup tells a story and every bite is a slice of heaven. Experience artisanal coffee and handcrafted cakes daily.</p>
+            <a href="#menu" class="btn">Explore Menu</a>
+        </div>
+    </section>
+
+    <section id="menu" class="menu">
+        <h2 class="section-title">Our Menu Card</h2>
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="coffee">Coffee</button>
+            <button class="filter-btn" data-filter="cake">Cakes</button>
+        </div>
+
+        <div class="menu-container">
+            <div class="menu-item" data-category="coffee">
+                <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&q=80&w=500" alt="Espresso">
+                <div class="item-info">
+                    <h3>Classic Espresso</h3>
+                    <p class="price">$3.50</p>
+                    <p class="desc">Rich, bold, and concentrated shot of pure coffee bliss.</p>
+                </div>
+            </div>
+            <div class="menu-item" data-category="cake">
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&q=80&w=500" alt="Chocolate Cake">
+                <div class="item-info">
+                    <h3>Fudge Chocolate Cake</h3>
+                    <p class="price">$5.50</p>
+                    <p class="desc">Decadent layers of moist chocolate cake wrapped in rich ganache.</p>
+                </div>
+            </div>
+            <div class="menu-item" data-category="coffee">
+                <img src="https://images.unsplash.com/photo-1570968915860-54d5c301fc9f?auto=format&fit=crop&q=80&w=500" alt="Latte Art">
+                <div class="item-info">
+                    <h3>Caramel Macchiato</h3>
+                    <p class="price">$4.75</p>
+                    <p class="desc">Espresso combined with vanilla syrup, milk, and caramel drizzle.</p>
+                </div>
+            </div>
+            <div class="menu-item" data-category="cake">
+                <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&q=80&w=500" alt="Strawberry Cheesecake">
+                <div class="item-info">
+                    <h3>Strawberry Cheesecake</h3>
+                    <p class="price">$6.00</p>
+                    <p class="desc">Creamy New York style cheesecake topped with fresh strawberry compote.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2 class="section-title">Orders Placed So Far</h2>
+        <p class="section-subtitle">Real bakes and brews delivered straight to our happy community</p>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1517433456452-f9633a875f6f?auto=format&fit=crop&q=80&w=500" alt="Custom Celebration Order">
+                <div class="overlay"><span>Birthday Cake Order #2041</span></div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=80&w=500" alt="Morning Coffee Catering">
+                <div class="overlay"><span>Office Coffee Catering #2042</span></div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&q=80&w=500" alt="Pastry Box Placed">
+                <div class="overlay"><span>Custom Weekend Treats #2043</span></div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1534432127737-54de01a886f2?auto=format&fit=crop&q=80&w=500" alt="Wedding Cake Tier">
+                <div class="overlay"><span>Custom Anniversary Tier #2044</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="order" class="order">
+        <div class="order-container">
+            <div class="order-info">
+                <h2>Custom Inquiry & Orders</h2>
+                <p>Planning an event, birthday, or need a bulk coffee setup? Drop us a line. Our master bakers and baristas will bring your vision to life.</p>
+                <div class="hours-info">
+                    <h3><i class="far fa-clock"></i> Location & Hours</h3>
+                    <p><strong>Address:</strong> 123 Cafe Street, Food District, MH</p>
+                    <p><strong>Mon - Fri:</strong> 7:00 AM - 9:00 PM</p>
+                    <p><strong>Sat - Sun:</strong> 8:00 AM - 10:00 PM</p>
+                </div>
+            </div>
+            <form id="orderForm" class="order-form">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <select id="order-type" required>
+                        <option value="" disabled selected>Select Order Type</option>
+                        <option value="custom-cake">Custom Cake Design</option>
+                        <option value="bulk-coffee">Bulk Coffee / Catering</option>
+                        <option value="table-reservation">Table Gathering</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" rows="5" placeholder="Describe your perfect order (flavors, date, size, or dynamic details...)" required></textarea>
+                </div>
+                <button type="submit" class="btn">Submit Order Inquiry</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="about-faq" class="about-faq">
+        <div class="about-section">
+            <h2>About Timu</h2>
+            <p>Founded with a deep love for rich aromatic coffee beans and decadent desserts, Timu has evolved into a local haven for foodies. We source organic coffee beans sustainably and bake everything from scratch every single morning. Quality, comfort, and community form our foundational recipe.</p>
+        </div>
+        
+        <div class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <div class="faq-question">Do you offer vegan or gluten-free options? <i class="fas fa-chevron-down"></i></div>
+                <div class="faq-answer"><p>Yes! We have dedicated gluten-free cake alternatives and offer oat, almond, and soy milk options for all our coffees.</p></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">How many days in advance should I place custom cake orders? <i class="fas fa-chevron-down"></i></div>
+                <div class="faq-answer"><p>We highly recommend placing custom orders at least 3 to 5 days in advance via our custom inquiry form.</p></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Do you deliver orders? <i class="fas fa-chevron-down"></i></div>
+                <div class="faq-answer"><p>We offer home delivery within a 10km radius for all orders above $20.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-container">
+            <div class="footer-box">
+                <h3>Timu Cafe</h3>
+                <p>Bringing warmth, community, and exquisite tastes to your daily routine.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-box">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu Card</a></li>
+                    <li><a href="#gallery">Recent Gallery</a></li>
+                    <li><a href="#order">Place Inquiry</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-box map-box">
+                <h3>Find Us</h3>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.617540232652!2d-73.9856559242163!3d40.74844047138902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sin!4v1689000000000!5m2!1sen!2sin" width="100%" height="130" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        
+        <div class="credit">
+            <p>&copy; 2026 Timu Cafe. All Rights Reserved.</p>
+            <p class="designer">Website Designed by <span>Anand Nare (Gaurai Websolutions)</span></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
